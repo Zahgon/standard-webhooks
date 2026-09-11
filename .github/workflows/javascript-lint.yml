@@ -14,12 +14,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+
       - name: Install modules
         run: |
-          yarn
+          npm ci
         working-directory: libraries/javascript
 
       - name: Lint
         run: |
-          yarn run lint
+          npm run check
+        working-directory: libraries/javascript
+
+      - name: Test
+        run: |
+          npm test
         working-directory: libraries/javascript
