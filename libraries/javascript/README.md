@@ -16,12 +16,12 @@ wh.verify(webhook_payload, webhook_headers);
 ## Requirements
 
  - node
- - npm
+ - yarn
 
 ## Building the library
 ```sh
-npm install
-npm run build
+yarn
+yarn build
 ```
 
 ## Contributing
@@ -29,7 +29,7 @@ npm run build
 Before opening a PR be sure to format your code!
 
 ```sh
-npm run check:fix
+yarn lint:fix
 ```
 
 ## Running Tests
@@ -37,5 +37,5 @@ npm run check:fix
 Simply run:
 
 ```sh
-npm test
+yarn test
 ```

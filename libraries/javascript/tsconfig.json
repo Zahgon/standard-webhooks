@@ -3,8 +3,8 @@
     "strict": true,
     /* Basic Options */
     "target": "es6",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "declaration": true,
     "allowJs": true,
 
@@ -16,14 +16,17 @@
 
     "removeComments": true,
     "sourceMap": true,
+    "rootDir": "./src",
     "outDir": "./dist",
     "noLib": false,
     "lib": ["es6", "dom"]
   },
+  "include": ["src/**/*.ts"],
   "exclude": [
     "dist",
     "node_modules",
-    "eslint.config.mjs",
-  ],
-  "filesGlob": ["./src/**/*.ts"]
+    "jest.config.js",
+    "src/**/*.test.ts",
+    "eslint.config.mjs"
+  ]
 }

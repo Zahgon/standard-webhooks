@@ -6,3 +6,9 @@ libraries/composer.lock
 libraries/vendor/
 libraries/.php-cs-fixer.cache
 libraries/.phpunit.result.cache
+
+instruction.md
+fix.patch
+test.patch
+golden.patch
+truth.md
